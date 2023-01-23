@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+}
+body{
+    position: relative;
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+.background-top{
+    position: absolute;
+    top: -30vw;
+    left: -30vw;
+    z-index: -1000;
+}
+.background-top img{
+    width: calc(105%);
+    height: calc(105%);
+}
+.background-bottom{
+    position: absolute;
+    bottom: -45vw;
+    right: -15vw;
+    z-index: -1000;
+}
+.background-bottom img {
+    width: calc(105%);
+    height: calc(105%);
+}
+.card-wrapper{
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+.card-avatar{
+    margin-top: -3.5em;
+}
+.card-avatar img{
+    border-radius: 50%;
+    border: .3em solid hsl(0, 0%, 100%);
+}
+.card-content{
+   padding: 1em;
+}
+.card-content-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.name-age-section{
+    display: flex;
+    padding-bottom: .5em;
+    font-size: 1.2em;
+}
+.name{
+    padding-right: .5em;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.age,.city{
+    color: hsl(227, 10%, 46%);
+}
+.city{
+    font-size: 16px;
+    padding-bottom: 1em;
+}
+hr{
+    width: 100%;
+    height: 3px;
+    border-color: hsl(0, 0%, 90%);
+    background-color: hsl(0, 0%, 90%);
+    outline: 0;
+}
+.card-content-numbers{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2em;
+}
+.number-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-content-numbers .number-section .number{
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+    font-size: 20px;
+    letter-spacing: .03em;
+}
+.card-content-numbers .number-section .number-description{
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+    letter-spacing: .03em;
+}
+
+@media (max-width: 400px){
+    body{
+        overflow: hidden;
+        height: 100vh;
+    }
+    .background-top{
+        position: absolute;
+        top: -70%;
+        left: -90%;
+    }
+    .background-top img{
+        width: 90%;
+        height: 90%;
+    }
+    .background-bottom {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+    }
+    .background-bottom img{
+        width: 90%;
+        height: 90%;
+    }
+}
